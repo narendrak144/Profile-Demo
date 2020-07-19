@@ -41,8 +41,7 @@ class DashboardComponent extends Component<any, any> {
                     <header id="header" className="header">
                         <div className="top-left">
                             <div className="navbar-header">
-                                <a className="navbar-brand" href="#"><img src="images/logo.png" alt="Logo" /></a>
-                                <a className="navbar-brand hidden" href="#"><img src="images/logo2.png" alt="Logo" /></a>
+                                <a className="navbar-brand" href="#"><img src="../../../images/logo.png" alt="Logo" /></a>                                
                                 <a id="menuToggle" className="menutoggle"><i className="fa fa-bars"></i></a>
                             </div>
                         </div>
@@ -82,5 +81,4 @@ class DashboardComponent extends Component<any, any> {
         );
     }
 }
-
 export default DashboardComponent;

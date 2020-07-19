@@ -1,14 +1,16 @@
+import { Link } from 'react-router-dom';
 import React from 'react';
+import * as logo from '../../../images/logo.png'
 
 const LoginComponent = (props: any) => {
     return (
-        <div className="bg-dark">
+        <div>
             <div className="sufee-login d-flex align-content-center flex-wrap">
                 <div className="container">
                     <div className="login-content">
                         <div className="login-logo">
                             <a href="index.html">
-                                <img className="align-content" src="images/logo.png" alt="" />
+                                <img className="align-content" src='../../../images/logo.png' alt="" />
                             </a>
                         </div>
                         <div className="login-form">
@@ -30,8 +32,8 @@ const LoginComponent = (props: any) => {
                                     </label>
 
                                 </div>
-                                <button type="submit" className="btn btn-success btn-flat m-b-30 m-t-30">Sign in</button>
-
+                                
+                                <Link to="/page/dashboard"><button type="submit" className="btn btn-success btn-flat m-b-30 m-t-30">Sign in</button></Link>
                                 <div className="register-link m-t-15 text-center">
                                     <p>Don't have account ? <a href="#"> Sign Up Here</a></p>
                                 </div>
